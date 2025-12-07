@@ -16,7 +16,7 @@ def test_create_auth_token(base_url):    #Вставляем из conftest.py ф
             json=payload,
             headers=headers
         )
-    print(response.json())
+
     # Then
     with allure.step("Verify status code is 200"):
         assert response.status_code == 200

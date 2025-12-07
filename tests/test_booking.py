@@ -3,6 +3,7 @@ import allure
 
 @allure.feature("Booking")
 @allure.story("Get booking ids")
+@allure.title("Проверка получения списка броней и их id")
 def test_get_booking_ids(base_url):
     with allure.step('Получаем все айди'):
         r = requests.get(url=f'{base_url}/booking')

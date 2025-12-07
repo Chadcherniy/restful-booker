@@ -4,6 +4,7 @@ import allure
 
 @allure.feature("Authentication")
 @allure.story("User can obtain an auth token")
+@allure.title("Проверка получения токена с корректными данными")
 def test_create_auth_token(base_url):    #Вставляем из conftest.py фикстуру
     # Given
     payload = {"username": "admin", "password": "password123"}

@@ -24,9 +24,9 @@ def test_crud_booking(base_url, auth_token):    # Интеграционный �
         create_resp = requests.post(
             f'{base_url}/booking',
             json=VALID_BOOKING,
-        )
+        )   # Делаем post-запрос с валидными данными
         assert create_resp.status_code == 200, 'Прошло не так'
-        booking_id = create_resp.json()["bookingid"]
+        booking_id = create_resp.json()["bookingid"]    # записываем айди в переменную bokking_id
 
     # 2. READ\Читаем
     with allure.step("Получаем бронь по ID"):

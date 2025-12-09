@@ -12,5 +12,5 @@ class APIClient:
 
     def post(self, endpoint, **kwargs):
         return self.session.post(f"{self.base_url}/{endpoint}", **kwargs)
-
+ 
     # Добавьте put, delete и т.д. по мере необходимости

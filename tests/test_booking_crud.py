@@ -16,7 +16,7 @@ def test_booking_crud(auth_token):
 
     # READ
     booking = client.get_booking(booking_id)
-    assert booking["firstname"] == "John"
+    assert booking["firstname"] == "Герман"
 
     # UPDATE
     updated_data = {**VALID_BOOKING, "totalprice": 300}
